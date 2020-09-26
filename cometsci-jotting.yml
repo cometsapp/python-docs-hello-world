@@ -18,7 +18,8 @@ dev:
         build:
             notify: True
             tasks:
-                - echo "build"
+                - echo "Start Build"
+                - echo "End Build"
 
         post-build:
             notify: True
