@@ -1,0 +1,41 @@
+platform: python # Platform to detect ready made processes
+
+default_env: dev # Default when a default job run
+
+release_env: dev # Used when a user requests a release version
+
+dev:
+    auto-deployment: true # Possible values: yes, no, true, false
+
+    stages:
+        notify: True
+
+        pre-build:
+            notify: True
+            tasks:
+                - echo "pre-build"
+
+        build:
+            notify: True
+            tasks:
+                - echo "build"
+
+        post-build:
+            notify: True
+            tasks:
+                - echo "post-build"
+
+        test:
+            notify: True
+            tasks:
+                - echo "testing"
+
+        pre-deployment:
+            notify: True
+            tasks:
+                - echo "pre-dep"
+
+        deploy:
+            notify: True
+            tasks:
+                - echo "Deploying"
