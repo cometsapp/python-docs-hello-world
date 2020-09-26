@@ -1,4 +1,4 @@
-platform: python # Platform to detect ready made processes
+platforms: python # Platform to detect ready made processes
 
 default_env: dev # Default when a default job run
 
@@ -17,7 +17,7 @@ dev:
 
         build:
             notify: True
-            taskss:
+            tasks:
                 - echo "Start Build"
                 - echo "End Build"
 
