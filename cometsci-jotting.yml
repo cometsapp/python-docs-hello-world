@@ -17,7 +17,7 @@ dev:
 
         build:
             notify: True
-            tasks:
+            taskss:
                 - echo "Start Build"
                 - echo "End Build"
 
