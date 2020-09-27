@@ -1,6 +1,6 @@
 platform: python # Platform to detect ready made processes
 
-default_envs: dev # Default when a default job run
+default_env: devs # Default when a default job run
 
 release_env: dev # Used when a user requests a release version
 
