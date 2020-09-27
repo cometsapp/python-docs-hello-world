@@ -2,7 +2,7 @@ platform: python # Platform to detect ready made processes
 
 default_env: devs # Default when a default job run
 
-release_env: dev # Used when a user requests a release version
+release_env: rel # Used when a user requests a release version
 
 dev:
     auto-deployment: true # Possible values: yes, no, true, false
